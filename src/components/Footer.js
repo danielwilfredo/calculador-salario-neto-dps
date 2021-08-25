@@ -2,7 +2,7 @@
 import { RefreshControlBase } from "react-native";
 import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
-import colors from "../utils/colors";
+import colors from "../utils/Colors";
 
 export default function Footer(props) {
   const { calculate} = props;

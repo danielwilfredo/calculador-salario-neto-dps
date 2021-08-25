@@ -11,13 +11,12 @@ const Result = (props) => {
 
   return (
     <View style={styles.content}>
-      
+      <Text style={styles.title}>RESUMEN</Text>
         <View style={styles.boxResult}>
-          <Text style={styles.title}>RESUMEN</Text>
           <DataResult title="Nombre Empleado:" value={`${nombre}`} />
           <DataResult title="Descuentos %:" value={`(ISSS- 3%, AFP-4%, RENTA-5%)`} />
           <DataResult title="Descuento ISS:" value={`- ${descISS} $`} />
-          <DataResult title="Descuento RENTA:" value={`- ${descRENTA} $`} />
+          <DataResult title="Descuento RENTA:" value={`-${descRENTA} $`} />
           <DataResult title="Descuento AFP:" value={`- ${descAFP} $`} />
           <DataResult title="Salario Base:" value={`${salariobase} $`} />
           <DataResult title="Salario Neto:" value={`${salarioneto} $`} />
@@ -31,7 +30,8 @@ function DataResult(props) {
   const { title, value } = props;
   return (
     <View style={styles.value}>
-        <Text>{title}</Text> <Text>{value}</Text>
+        <Text>{title}</Text> 
+        <Text>{value}</Text>
     </View>
   );
 }
